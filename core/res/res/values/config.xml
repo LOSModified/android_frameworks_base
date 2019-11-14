@@ -111,7 +111,7 @@
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
-    <bool name="config_sf_limitedAlpha">false</bool>
+    <bool name="config_sf_limitedAlpha">true</bool>
 
     <!-- Default value used to block data calls if ims is not
          connected.  If you use the ims apn DCT will block
@@ -122,7 +122,7 @@
          at performing a blur.  Used by parts of the UI to turn off
          the blur effect where it isn't worth the performance hit.
          As of Honeycomb, blurring is not supported anymore. -->
-    <bool name="config_sf_slowBlur">true</bool>
+    <bool name="config_sf_slowBlur">false</bool>
 
     <!-- Flag indicating that the media framework should support playing of sounds on volume
          key usage.  This adds noticeable additional overhead to volume key processing, so
@@ -259,7 +259,7 @@
          dozing).  This should be enabled if you have such services and expect apps to
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">false</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- Whether (if true) this is a kind of device that can be moved around (eg. phone/laptop),
          or (if false) something for which movement is either not measurable or should not count
@@ -505,7 +505,7 @@
     <bool name="config_adaptive_sleep_available">false</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">false</bool>
+    <bool name="config_smart_battery_available">true</bool>
 
     <!-- Flag indicating whether we should enable camera-based autorotate -->
     <bool name="config_camera_autorotate">false</bool>
@@ -526,7 +526,7 @@
     <bool name="config_enableServerNotificationEffectsForAutomotive">false</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">false</bool>
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
     <bool name="config_usbChargingMessage">true</bool>
@@ -550,7 +550,7 @@
     <!-- If this is true, allow wake from theater mode from window layout flag. -->
     <bool name="config_allowTheaterModeWakeFromWindowLayout">false</bool>
     <!-- If this is true, long press on power button will be available from the non-interactive state -->
-    <bool name="config_supportLongPressPowerWhenNonInteractive">false</bool>
+    <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
     <!-- If this is true, short press on power button will be available whenever the default display
          is on even if the device is non-interactive (dreaming). -->
     <bool name="config_supportShortPressPowerWhenDefaultDisplayOn">false</bool>
@@ -580,7 +580,7 @@
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
-    <bool name="config_allowAllRotations">false</bool>
+    <bool name="config_allowAllRotations">true</bool>
 
     <!-- If false and config_allowAllRotations is false, the screen will rotate to the natural
          orientation of the device when the auto-rotate policy is toggled. -->
@@ -899,7 +899,7 @@
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
-    <bool name="config_setColorTransformAccelerated">false</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware for individual layers. -->
@@ -1164,7 +1164,7 @@
     <!-- Whether the setting to change long press on power behaviour from default to assistant (5)
          is available in Settings.
      -->
-    <bool name="config_longPressOnPowerForAssistantSettingAvailable">true</bool>
+    <bool name="config_longPressOnPowerForAssistantSettingAvailable">false</bool>
 
     <!-- Control the behavior when the user long presses the power button for a long time.
             0 - Nothing
@@ -1495,7 +1495,7 @@
     <bool name="config_enableLockBeforeUnlockScreen">false</bool>
 
     <!-- Disable lockscreen rotation by default -->
-    <bool name="config_enableLockScreenRotation">false</bool>
+    <bool name="config_enableLockScreenRotation">true</bool>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">false</bool>
@@ -2000,6 +2000,8 @@
         <item>com.android.settings</item>
         <item>com.android.providers.settings</item>
         <!-- Add packages here -->
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
     </string-array>
 
     <!-- If true, will force all packages on any system partition as queryable by any app regardless
@@ -2054,7 +2056,7 @@
     <!-- The difference in millis that has to exist between a time suggestion under
          consideration by the time_detector and the system clock before the system clock will be
          changed. -->
-    <integer name="config_timeDetectorAutoUpdateDiffMillis">2000</integer>
+    <integer name="config_timeDetectorAutoUpdateDiffMillis">50</integer>
 
     <!-- Enables the GnssTimeUpdate service. This is the global switch for enabling Gnss time based
          suggestions to TimeDetector service. See also config_autoTimeSourcesPriority. -->
@@ -2552,7 +2554,7 @@
     <string name="config_overrideComponentUiPackage" translatable="false">com.android.stk</string>
 
     <!-- IP address of the dns server to use if nobody else suggests one -->
-    <string name="config_default_dns_server" translatable="false">8.8.8.8</string>
+    <string name="config_default_dns_server" translatable="false">1.1.1.1</string>
 
     <!-- The default mobile provisioning apn. Empty by default, maybe overridden by
          an mcc/mnc specific config.xml -->
@@ -2659,7 +2661,7 @@
 
     <!-- Sets whether menu shortcuts should be displayed on panel menus when
          a keyboard is present. -->
-    <bool name="config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="config_showMenuShortcutsWhenKeyboardPresent">true</bool>
 
     <!-- Do not translate. Defines the slots is Two Digit Number for dialing normally not USSD.
 
@@ -3121,7 +3123,7 @@
     <dimen name="config_viewMinFlingVelocity">50dp</dimen>
 
     <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
-    <dimen name="config_viewMaxFlingVelocity">8000dp</dimen>
+    <dimen name="config_viewMaxFlingVelocity">12000dp</dimen>
 
     <!-- Minimum velocity (absolute value) to initiate a fling from a rotary encoder device, as
          measured in dips per second. Setting this to -1dp disables rotary encoder fling.  -->
@@ -3466,7 +3468,7 @@
 
     <!-- Whether safe headphone hearing is enforced by any regulation (e.g.
          EN50332-3, EN50332-2) or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Whether safe headphone sound dosage warning is enabled or not.
          This value should only be overlaid to true when a vendor supports
@@ -3690,7 +3692,7 @@
             >com.android.credentialmanager/com.android.credentialmanager.CredentialProviderReceiver</string>
 
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
-    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.settings;</string>
+    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.settings;com.android.vending;</string>
 
     <!-- System settings intelligence package name -->
     <string name="config_systemSettingsIntelligence" translatable="false">
@@ -3829,7 +3831,7 @@
     <string name="config_defaultNetworkScorerPackageName"></string>
 
     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
-    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">1.0</item>
+    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.8</item>
 
     <!-- The amount to scale reduced scale snapshots for Overview and snapshot starting windows.
          Reduced scale snapshots are loaded before full screen snapshots to improve load times and
@@ -3839,7 +3841,7 @@
     <item name="config_lowResTaskSnapshotScale" format="float" type="dimen">0.5</item>
 
     <!-- Feature flag to store TaskSnapshot in 16 bit pixel format to save memory. -->
-    <bool name="config_use16BitTaskSnapshotPixelFormat">false</bool>
+    <bool name="config_use16BitTaskSnapshotPixelFormat">true</bool>
 
     <!-- The amount to scale fullscreen activity snapshot for predict-back animation. -->
     <item name="config_resActivitySnapshotScale" format="float" type="dimen">0.6</item>
@@ -3909,7 +3911,7 @@
     <integer name="config_maxNumVisibleRecentTasks">-1</integer>
 
     <!-- The duration in which a recent task is considered in session and should be visible. -->
-    <integer name="config_activeTaskDurationHours">6</integer>
+    <integer name="config_activeTaskDurationHours">12</integer>
 
     <!-- Whether this device prefers to show snapshot or splash screen on back predict target.
          When set true, there will create windowless starting surface for the preview target, so it
@@ -4023,7 +4025,7 @@
     </string-array>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false"></string>
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false"></string>
@@ -4068,7 +4070,7 @@
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-    <bool name="config_carrier_wfc_ims_available">false</bool>
+    <bool name="config_carrier_wfc_ims_available">true</bool>
 
     <!-- Whether to use voip audio mode for ims call -->
     <bool name="config_use_voip_mode_for_ims">false</bool>
@@ -4260,7 +4262,7 @@
     <bool name="config_magnification_magnify_keyboard_default">false</bool>
 
     <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">false</bool>
+    <bool name="config_enableBurnInProtection">true</bool>
 
     <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
          will be used. -->
@@ -4469,7 +4471,7 @@
     <item name="config_keyboardHapticFeedbackFixedAmplitude" format="float" type="dimen">-1</item>
 
     <!-- Indicating if keyboard vibration settings supported or not. -->
-    <bool name="config_keyboardVibrationSettingsSupported">false</bool>
+    <bool name="config_keyboardVibrationSettingsSupported">true</bool>
 
     <!-- Indicating if ringtone vibration settings supported or not. -->
     <bool name="config_ringtoneVibrationSettingsSupported">false</bool>
@@ -4829,7 +4831,7 @@
     <integer name="config_keepPreloadsMinDays">7</integer>
 
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">false</bool>
+    <bool name="config_useRoundIcon">true</bool>
 
     <!-- Flag indicating whether the assist disclosure can be disabled using
          ASSIST_DISCLOSURE_ENABLED. -->
@@ -5335,7 +5337,7 @@
     <bool name="config_useVideoPauseWorkaround">false</bool>
 
     <!-- Whether to send a custom package name with the PSD.-->
-    <bool name="config_sendPackageName">false</bool>
+    <bool name="config_sendPackageName">true</bool>
 
     <!-- Name for the set of keys associating package names -->
     <string name="config_helpPackageNameKey" translatable="false"></string>
@@ -5962,7 +5964,7 @@
 
     <!-- The type of the light sensor to be used by the display framework for things like
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
-    <string name="config_displayLightSensorType" translatable="false" />
+    <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
     <!-- Whether or not to enable automatic heap dumps for the system server on debuggable builds. -->
     <bool name="config_debugEnableAutomaticSystemServerHeapDumps">false</bool>
@@ -6146,7 +6148,7 @@
     <string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false"/>
 
     <!-- Sharesheet: define a max number of targets per application for new shortcuts-based direct share introduced in Q -->
-    <integer name="config_maxShortcutTargetsPerApp">3</integer>
+    <integer name="config_maxShortcutTargetsPerApp">8</integer>
 
     <!-- The package name for the vendor implementation of ACTION_FACTORY_RESET. For some vendors,
     the default implementation of ACTION_FACTORY_RESET does not work, so it is needed to re-route
@@ -6196,6 +6198,8 @@
          AppIntegrityManager. These need to be apps on the system partition. -->
     <string-array name="config_integrityRuleProviderPackages" translatable="false">
         <!-- Add packages here -->
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
     </string-array>
 
     <!-- Whether or not wcg (wide color gamut) should be enabled on this device,
@@ -6337,7 +6341,7 @@
     <item name="config_wallpaperMinScale" format="float" type="dimen">1</item>
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
-    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.10</item>
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
 
     <!-- If true, the wallpaper will scale regardless of the value of shouldZoomOutWallpaper() -->
     <bool name="config_alwaysScaleWallpaper">false</bool>
@@ -6656,9 +6660,9 @@
     <bool name="config_forceOrientationListenerEnabledWhileDreaming">false</bool>
 
     <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
-    <bool name="config_telephony5gStandalone">false</bool>
+    <bool name="config_telephony5gStandalone">true</bool>
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
-    <bool name="config_telephony5gNonStandalone">false</bool>
+    <bool name="config_telephony5gNonStandalone">true</bool>
 
     <!-- Whether to select voice/data/sms preference without user confirmation -->
     <bool name="config_voice_data_sms_auto_fallback">false</bool>
@@ -6890,7 +6894,7 @@
     <bool name="config_earcFeatureDisabled_default">false</bool>
 
     <!-- Whether app hibernation deletes OAT artifact files as part of global hibernation. -->
-    <bool name="config_hibernationDeletesOatArtifactsEnabled">true</bool>
+    <bool name="config_hibernationDeletesOatArtifactsEnabled">false</bool>
 
     <!-- Package name of the on-device intelligent processor for system UI
          features. Examples include the search functionality or the app
@@ -7319,7 +7323,11 @@
          components, such as the telephony stack, which require access to the full ServiceState for
          tasks such as network registration. -->
     <string-array name="config_serviceStateLocationAllowedPackages">
+        <item>"com.android.mms"</item>
+        <item>"com.android.ons"</item>
         <item>"com.android.phone"</item>
+        <item>"com.android.providers.telephony"</item>
+        <item>"com.android.stk"</item>
     </string-array>
 
     <!-- Whether the wake screen on notifications feature is available. -->
@@ -7550,7 +7558,7 @@
 
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
-    <bool name="config_deviceSupportsHighPerfTransitions">true</bool>
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
 
     <!-- Wear devices: An intent action that is used for remote intent. -->
     <string name="config_wearRemoteIntentAction" translatable="false" />
@@ -7559,7 +7567,7 @@
     <bool name="config_canInternalDisplayHostDesktops">false</bool>
 
     <!-- Whether desktop mode is supported on the current device  -->
-    <bool name="config_isDesktopModeSupported">false</bool>
+    <bool name="config_isDesktopModeSupported">true</bool>
 
     <!-- Whether the developer option for desktop mode is supported on the current device  -->
     <bool name="config_isDesktopModeDevOptionSupported">false</bool>
@@ -7619,7 +7627,7 @@
 
     <!-- The maximum number of call log entries for each sim card that can be stored in the call log
          provider on the device. -->
-    <integer name="config_maximumCallLogEntriesPerSim">500</integer>
+    <integer name="config_maximumCallLogEntriesPerSim">5000</integer>
 
     <!-- Whether to enable scaling and fading animation to scrollviews while scrolling.
          P.S this is a change only intended for wear devices. -->
