@@ -105,7 +105,7 @@
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
-    <bool name="config_sf_limitedAlpha">false</bool>
+    <bool name="config_sf_limitedAlpha">true</bool>
 
     <!-- Default value used to block data calls if ims is not
          connected.  If you use the ims apn DCT will block
@@ -185,12 +185,12 @@
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
-    <bool name="config_ui_enableFadingMarquee">false</bool>
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
-    <bool name="config_enableHapticTextHandle">false</bool>
+    <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Whether dialogs should close automatically when the user touches outside
          of them.  This should not normally be modified. -->
@@ -246,7 +246,7 @@
          dozing).  This should be enabled if you have such services and expect apps to
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">false</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- Whether (if true) this is a kind of device that can be moved around (eg. phone/laptop),
          or (if false) something for which movement is either not measurable or should not count
@@ -489,7 +489,7 @@
     <bool name="config_adaptive_sleep_available">false</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">false</bool>
+    <bool name="config_smart_battery_available">true</bool>
 
     <!-- Flag indicating whether we should enable camera-based autorotate -->
     <bool name="config_camera_autorotate">false</bool>
@@ -510,7 +510,7 @@
     <bool name="config_enableServerNotificationEffectsForAutomotive">false</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">false</bool>
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
     <bool name="config_usbChargingMessage">true</bool>
@@ -548,7 +548,7 @@
     <!-- If this is true, go to sleep when theater mode is enabled from button press -->
     <bool name="config_goToSleepOnButtonPressTheaterMode">true</bool>
     <!-- If this is true, long press on power button will be available from the non-interactive state -->
-    <bool name="config_supportLongPressPowerWhenNonInteractive">false</bool>
+    <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
 
     <!-- If this is true, then keep dreaming when undocking. -->
     <bool name="config_keepDreamingWhenUndocking">false</bool>
@@ -577,7 +577,7 @@
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
-    <bool name="config_allowAllRotations">false</bool>
+    <bool name="config_allowAllRotations">true</bool>
 
     <!-- If false and config_allowAllRotations is false, the screen will rotate to the natural
          orientation of the device when the auto-rotate policy is toggled. -->
@@ -876,7 +876,7 @@
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
-    <bool name="config_setColorTransformAccelerated">false</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware for individual layers. -->
@@ -1105,7 +1105,7 @@
     <!-- Whether the setting to change long press on power behaviour from default to assistant (5)
          is available in Settings.
      -->
-    <bool name="config_longPressOnPowerForAssistantSettingAvailable">true</bool>
+    <bool name="config_longPressOnPowerForAssistantSettingAvailable">false</bool>
 
     <!-- Control the behavior when the user long presses the power button for a long time.
             0 - Nothing
@@ -1372,7 +1372,7 @@
     <bool name="config_enableLockBeforeUnlockScreen">false</bool>
 
     <!-- Disable lockscreen rotation by default -->
-    <bool name="config_enableLockScreenRotation">false</bool>
+    <bool name="config_enableLockScreenRotation">true</bool>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">false</bool>
@@ -2267,7 +2267,7 @@
     <string name="config_overrideComponentUiPackage" translatable="false">com.android.stk</string>
 
     <!-- IP address of the dns server to use if nobody else suggests one -->
-    <string name="config_default_dns_server" translatable="false">8.8.8.8</string>
+    <string name="config_default_dns_server" translatable="false">1.1.1.1</string>
 
     <!-- The default mobile provisioning apn. Empty by default, maybe overridden by
          an mcc/mnc specific config.xml -->
@@ -2895,7 +2895,7 @@
     <bool name="config_useDevInputEventForAudioJack">false</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Whether safe headphone volume warning dialog is disabled on Vol+ (operator specific). -->
     <bool name="config_safe_media_disable_on_volume_up">true</bool>
@@ -3199,7 +3199,7 @@
     <string name="config_defaultNetworkScorerPackageName"></string>
 
     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
-    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">1.0</item>
+    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.8</item>
 
     <!-- The amount to scale reduced scale snapshots for Overview and snapshot starting windows.
          Reduced scale snapshots are loaded before full screen snapshots to improve load times and
@@ -3284,7 +3284,7 @@
     <integer name="config_maxNumVisibleRecentTasks">-1</integer>
 
     <!-- The duration in which a recent task is considered in session and should be visible. -->
-    <integer name="config_activeTaskDurationHours">6</integer>
+    <integer name="config_activeTaskDurationHours">12</integer>
 
     <!-- default window ShowCircularMask property -->
     <bool name="config_windowShowCircularMask">false</bool>
@@ -3601,7 +3601,7 @@
     <bool name="config_magnification_area">true</bool>
 
     <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">false</bool>
+    <bool name="config_enableBurnInProtection">true</bool>
 
     <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
          will be used. -->
@@ -4383,7 +4383,7 @@
     <bool name="config_useVideoPauseWorkaround">false</bool>
 
     <!-- Whether to send a custom package name with the PSD.-->
-    <bool name="config_sendPackageName">false</bool>
+    <bool name="config_sendPackageName">true</bool>
 
     <!-- Name for the set of keys associating package names -->
     <string name="config_helpPackageNameKey" translatable="false"></string>
@@ -4912,7 +4912,7 @@
 
     <!-- The type of the light sensor to be used by the display framework for things like
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
-    <string name="config_displayLightSensorType" translatable="false" />
+    <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
     <!-- Whether or not to enable automatic heap dumps for the system server on debuggable builds. -->
     <bool name="config_debugEnableAutomaticSystemServerHeapDumps">false</bool>
@@ -5057,7 +5057,7 @@
     <string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false"/>
 
     <!-- Sharesheet: define a max number of targets per application for new shortcuts-based direct share introduced in Q -->
-    <integer name="config_maxShortcutTargetsPerApp">3</integer>
+    <integer name="config_maxShortcutTargetsPerApp">8</integer>
 
     <!-- The package name for the vendor implementation of ACTION_FACTORY_RESET. For some vendors,
     the default implementation of ACTION_FACTORY_RESET does not work, so it is needed to re-route
@@ -5206,7 +5206,7 @@
     <item name="config_wallpaperMinScale" format="float" type="dimen">1</item>
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
-    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.10</item>
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
 
     <!-- If true, the wallpaper will scale regardless of the value of shouldZoomOutWallpaper() -->
     <bool name="config_alwaysScaleWallpaper">false</bool>
@@ -5777,7 +5777,7 @@
     </string-array>
 
     <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">32</integer>
+    <integer name="config_customizedMaxCachedProcesses">64</integer>
 
     <!-- Whether this device should support taking app snapshots on closure -->
     <bool name="config_disableTaskSnapshots">false</bool>
@@ -6109,7 +6109,11 @@
          components, such as the telephony stack, which require access to the full ServiceState for
          tasks such as network registration. -->
     <string-array name="config_serviceStateLocationAllowedPackages">
+        <item>"com.android.mms"</item>
+        <item>"com.android.ons"</item>
         <item>"com.android.phone"</item>
+        <item>"com.android.providers.telephony"</item>
+        <item>"com.android.stk"</item>
     </string-array>
 
     <!-- Whether the wake screen on notifications feature is available. -->
