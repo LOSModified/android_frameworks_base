@@ -18,7 +18,7 @@
 -->
 <resources>
     <bool name="def_dim_screen">true</bool>
-    <integer name="def_screen_off_timeout">60000</integer>
+    <integer name="def_screen_off_timeout">30000</integer>
     <integer name="def_sleep_timeout">-1</integer>
     <bool name="def_airplane_mode_on">false</bool>
     <bool name="def_theater_mode_on">false</bool>
@@ -31,14 +31,14 @@
     <bool name="def_accelerometer_rotation">false</bool>
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <integer name="def_screen_brightness">102</integer>
-    <bool name="def_screen_brightness_automatic_mode">false</bool>
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
     <fraction name="def_window_animation_scale">100%</fraction>
     <fraction name="def_window_transition_scale">100%</fraction>
     <bool name="def_haptic_feedback">true</bool>
 
-    <bool name="def_bluetooth_on">true</bool>
+    <bool name="def_bluetooth_on">false</bool>
     <bool name="def_wifi_display_on">false</bool>
-    <bool name="def_install_non_market_apps">false</bool>
+    <bool name="def_install_non_market_apps">true</bool>
     <!-- 0 == off, 3 == on -->
     <integer name="def_location_mode">3</integer>
     <bool name="assisted_gps_enabled">true</bool>
@@ -133,7 +133,7 @@
     <!-- Default for DTMF tones enabled -->
     <bool name="def_dtmf_tones_enabled">true</bool>
     <!-- Default for UI touch sounds enabled -->
-    <bool name="def_sound_effects_enabled">true</bool>
+    <bool name="def_sound_effects_enabled">false</bool>
 
     <!-- Development settings -->
     <bool name="def_stay_on_while_plugged_in">false</bool>
@@ -163,7 +163,7 @@
     <integer name="def_lock_screen_show_notifications">1</integer>
 
     <!-- Default for Settings.Secure.LOCK_SCREEN_ALLOW_PRIVATE_NOTIFICATIONS -->
-    <bool name="def_lock_screen_allow_private_notifications">true</bool>
+    <bool name="def_lock_screen_allow_private_notifications">false</bool>
 
     <!-- Default for Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED, 1==on -->
     <integer name="def_heads_up_enabled">1</integer>
@@ -212,7 +212,7 @@
     <string name="def_backup_agent_timeout_parameters"></string>
 
     <!-- Default for Settings.System.VIBRATE_WHEN_RINGING -->
-    <bool name="def_vibrate_when_ringing">false</bool>
+    <bool name="def_vibrate_when_ringing">true</bool>
 
     <!-- Default for Settings.Global.CELL_ON; see PhoneConstants.CELL_ON_FLAG.
         0: cellular off; 1: cellular on. -->
