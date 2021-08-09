@@ -104,7 +104,7 @@ public class ThemeOverlayController extends SystemUI implements Dumpable {
     protected static final String TAG = "ThemeOverlayController";
     protected static final String OVERLAY_BERRY_BLACK_THEME =
             "org.lineageos.overlay.customization.blacktheme";
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     protected static final int NEUTRAL = 0;
     protected static final int ACCENT = 1;
