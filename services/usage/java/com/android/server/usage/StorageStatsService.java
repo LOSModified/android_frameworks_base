@@ -269,7 +269,7 @@ public class StorageStatsService extends IStorageStatsManager.Stub {
             // Since 1TB devices can actually have either 1000GB or 1024GB,
             // get the block device size and do just a small rounding if any at all
             final long totalBytes = mStorage.getInternalStorageBlockDeviceSize();
-            final long totalBytesRounded = FileUtils.roundStorageSize(totalBytes);
+            final long totalBytesRounded = totalBytes;
             // If the storage size is 997GB-999GB, round it to a 1000GB to show
             // 1TB in UI instead of 0.99TB. Same for 2TB, 4TB, 8TB etc.
             if (totalBytesRounded - totalBytes <= DataUnit.GIGABYTES.toBytes(3)) {
@@ -283,7 +283,7 @@ public class StorageStatsService extends IStorageStatsManager.Stub {
                 throw new ParcelableException(
                         new IOException("Failed to find storage device for UUID " + volumeUuid));
             }
-            return FileUtils.roundStorageSize(vol.disk.size);
+            return vol.disk.size;
         }
     }
 
