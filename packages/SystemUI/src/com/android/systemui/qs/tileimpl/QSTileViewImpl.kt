@@ -712,7 +712,7 @@ constructor(
         if (!Objects.equals(secondaryLabel.text, state.secondaryLabel)) {
             secondaryLabel.text = state.secondaryLabel
             secondaryLabel.visibility =
-                if (TextUtils.isEmpty(state.secondaryLabel)) {
+                if (TextUtils.isEmpty(secondaryLabel.text)) {
                     GONE
                 } else {
                     VISIBLE
