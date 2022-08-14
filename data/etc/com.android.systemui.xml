@@ -16,11 +16,16 @@
   -->
 <permissions>
     <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER" />
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.ALLOW_SLIPPERY_TOUCHES"/>
         <permission name="android.permission.BATTERY_STATS"/>
         <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
         <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
         <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
@@ -31,6 +36,8 @@
         <permission name="android.permission.DUMP"/>
         <permission name="android.permission.GET_APP_OPS_STATS"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW" />
         <permission name="android.permission.LOCATION_HARDWARE"/>
         <permission name="android.permission.MANAGE_DEBUGGING"/>
         <permission name="android.permission.MANAGE_GAME_MODE" />
@@ -47,16 +54,21 @@
         <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS" />
         <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_CONTACTS"/>
         <permission name="android.permission.READ_DREAM_STATE"/>
         <permission name="android.permission.READ_FRAME_BUFFER"/>
         <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.READ_PHONE_STATE" />
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
         <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
         <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REGISTER_STATS_PULL_ATOM"/>
         <permission name="android.permission.REQUEST_NETWORK_SCORES"/>
         <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE"/>
+        <permission name="android.permission.ROTATE_SURFACE_FLINGER" />
         <permission name="android.permission.SATELLITE_COMMUNICATION"/>
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.SET_WALLPAPER_DIM_AMOUNT"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
         <permission name="android.permission.START_ACTIVITY_AS_CALLER"/>
@@ -88,5 +100,6 @@
         <permission name="android.permission.SET_UNRESTRICTED_KEEP_CLEAR_AREAS" />
         <permission name="android.permission.READ_SEARCH_INDEXABLES" />
         <permission name="android.permission.ACCESS_AMBIENT_CONTEXT_EVENT"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
     </privapp-permissions>
 </permissions>
