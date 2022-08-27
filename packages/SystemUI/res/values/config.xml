@@ -50,7 +50,7 @@
          enabled for OLED devices to reduce/prevent burn in on the navigation bar (because of the
          black background and static button placements) and disabled for all other devices to
          prevent wasting cpu cycles on the dimming animation -->
-    <bool name="config_navigation_bar_enable_auto_dim_no_visible_wallpaper">true</bool>
+    <bool name="config_navigation_bar_enable_auto_dim_no_visible_wallpaper">false</bool>
 
     <!-- The maximum number of tiles in the QuickQSPanel -->
     <integer name="quick_qs_panel_max_tiles">4</integer>
@@ -395,13 +395,16 @@
         <item>30</item>
         <item>60</item>
         <item>120</item>
+        <item>300</item>
+        <item>720</item>
+        <item>1440</item>
     </integer-array>
 
     <!-- Smart replies in notifications: Whether smart replies in notifications are enabled. -->
     <bool name="config_smart_replies_in_notifications_enabled">true</bool>
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
-    <bool name="config_smart_replies_in_notifications_requires_targeting_p">true</bool>
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 
     <!-- Smart replies in notifications: Maximum number of times SmartReplyView will try to find a
          better (narrower) line-break for a double-line smart reply button. -->
@@ -782,15 +785,11 @@
 
     <!-- Icons that don't show in a collapsed non-keyguard statusbar -->
     <string-array name="config_collapsed_statusbar_icon_blocklist" translatable="false">
-        <item>@*android:string/status_bar_volume</item>
-        <item>@*android:string/status_bar_alarm_clock</item>
         <item>@*android:string/status_bar_call_strength</item>
     </string-array>
 
     <!-- Icons that don't show in a collapsed statusbar on keyguard -->
     <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
-        <item>@*android:string/status_bar_volume</item>
-        <item>@*android:string/status_bar_alarm_clock</item>
         <item>@*android:string/status_bar_call_strength</item>
     </string-array>
 
