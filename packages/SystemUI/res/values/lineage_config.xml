@@ -75,5 +75,5 @@
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">4.2</string>
 
     <!-- Whether to play turbulence noise after clicking the play button -->
-    <bool name="config_turbulenceNoise">true</bool>
+    <bool name="config_turbulenceNoise">false</bool>
 </resources>

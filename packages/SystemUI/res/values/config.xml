@@ -45,7 +45,7 @@
     <integer name="navigation_bar_deadzone_orientation">0</integer>
 
     <!-- Whether or not lockscreen shortcuts can be customized -->
-    <bool name="custom_lockscreen_shortcuts_enabled">false</bool>
+    <bool name="custom_lockscreen_shortcuts_enabled">true</bool>
 
     <!-- Whether or not long-pressing on keyguard will display to customize lockscreen -->
     <bool name="long_press_keyguard_customize_lockscreen_enabled">false</bool>
@@ -56,7 +56,7 @@
          enabled for OLED devices to reduce/prevent burn in on the navigation bar (because of the
          black background and static button placements) and disabled for all other devices to
          prevent wasting cpu cycles on the dimming animation -->
-    <bool name="config_navigation_bar_enable_auto_dim_no_visible_wallpaper">true</bool>
+    <bool name="config_navigation_bar_enable_auto_dim_no_visible_wallpaper">false</bool>
 
     <!-- The maximum number of tiles in the QuickQSPanel -->
     <integer name="quick_qs_panel_max_tiles">4</integer>
@@ -386,10 +386,10 @@
     <string name="config_navBarLayoutHandle" translatable="false">back[70AC];home_handle;ime_switcher[70AC]</string>
 
     <!-- Whether to show a warning notification when device's skin temperature is high. -->
-    <integer name="config_showTemperatureWarning">0</integer>
+    <integer name="config_showTemperatureWarning">1</integer>
 
     <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
-    <integer name="config_showUsbPortAlarm">0</integer>
+    <integer name="config_showUsbPortAlarm">1</integer>
 
     <item type="id" name="action_toggle_overview"/>
 
@@ -465,7 +465,7 @@
 
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
-    <bool name="config_vibrateOnIconAnimation">false</bool>
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- Notifications are sized to match the width of two (of 4) qs tiles in landscape. -->
     <bool name="config_skinnyNotifsInLandscape">true</bool>
@@ -479,13 +479,16 @@
         <item>30</item>
         <item>60</item>
         <item>120</item>
+        <item>300</item>
+        <item>720</item>
+        <item>1440</item>
     </integer-array>
 
     <!-- Smart replies in notifications: Whether smart replies in notifications are enabled. -->
     <bool name="config_smart_replies_in_notifications_enabled">true</bool>
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
-    <bool name="config_smart_replies_in_notifications_requires_targeting_p">true</bool>
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 
     <!-- Smart replies in notifications: Maximum number of times SmartReplyView will try to find a
          better (narrower) line-break for a double-line smart reply button. -->
@@ -847,7 +850,7 @@
     </string-array>
 
     <!-- Whether the communal service should be enabled -->
-    <bool name="config_communalServiceEnabled">false</bool>
+    <bool name="config_communalServiceEnabled">true</bool>
 
     <!-- Name of the database that stores info of widgets shown on glanceable hub -->
     <string name="config_communalDatabase" translatable="false">communal_db</string>
@@ -957,15 +960,11 @@
 
     <!-- Icons that don't show in a collapsed non-keyguard statusbar -->
     <string-array name="config_collapsed_statusbar_icon_blocklist" translatable="false">
-        <item>@*android:string/status_bar_volume</item>
-        <item>@*android:string/status_bar_alarm_clock</item>
         <item>@*android:string/status_bar_call_strength</item>
     </string-array>
 
     <!-- Icons that don't show in a collapsed statusbar on keyguard -->
     <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
-        <item>@*android:string/status_bar_volume</item>
-        <item>@*android:string/status_bar_alarm_clock</item>
         <item>@*android:string/status_bar_call_strength</item>
     </string-array>
 
@@ -1014,7 +1013,7 @@
 
     <!-- Time (in ms) to delay the bouncer views from showing when passive auth may be used for
     device entry. -->
-    <integer name="primary_bouncer_passive_auth_delay">500</integer>
+    <integer name="primary_bouncer_passive_auth_delay">0</integer>
 
     <!--
     The package name of the app store app. If empty, features using this should be gracefully
@@ -1119,7 +1118,7 @@
     <bool name="config_swipeToOpenGlanceableHub">true</bool>
 
     <!-- Whether or not to show the UMO on the glanceable hub when media is playing. -->
-    <bool name="config_showUmoOnHub">false</bool>
+    <bool name="config_showUmoOnHub">true</bool>
 
     <!-- Whether or not to show the promoted notifications on AOD. -->
     <bool name="config_showPromotedNotificationsOnAOD">true</bool>
