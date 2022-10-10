@@ -120,7 +120,7 @@ static status_t notifyMediaScanner(const char* fileName) {
     filePath.append(fileName);
     char* cmd[] = {(char*)"am", (char*)"broadcast",
                    (char*)"-a", (char*)"android.intent.action.MEDIA_SCANNER_SCAN_FILE",
-                   (char*)"-d", &filePath[0],
+                   (char*)"-d", &filePath[0], (char*) "--async",
                    nullptr};
 
     int status;
