@@ -42,7 +42,7 @@ public class RemoteDisplayChangeController {
 
     private static final String TAG = "RemoteDisplayChangeController";
 
-    private static final int REMOTE_DISPLAY_CHANGE_TIMEOUT_MS = 800;
+    private static final int REMOTE_DISPLAY_CHANGE_TIMEOUT_MS = 1500;
 
     private final WindowManagerService mService;
     private final DisplayContent mDisplayContent;
