@@ -98,7 +98,7 @@ public final class PhoneStatusBarTransitions extends BarTransitions {
                     animateTransitionTo(mNetworkTrafficStart, newAlpha),
                     animateTransitionTo(mNetworkTrafficCenter, newAlpha),
                     animateTransitionTo(mNetworkTrafficEnd, newAlpha),
-                    animateTransitionTo(mBattery, newAlphaBC)
+                    animateTransitionTo(mBattery, newAlpha)
                     );
             if (isLightsOut(mode)) {
                 anims.setDuration(LIGHTS_OUT_DURATION);
