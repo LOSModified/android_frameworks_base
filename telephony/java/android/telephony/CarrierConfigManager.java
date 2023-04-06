@@ -9368,7 +9368,7 @@ public class CarrierConfigManager {
             }
             return loader.getConfigForSubIdWithFeature(subId, mContext.getOpPackageName(),
                     mContext.getAttributionTag());
-        } catch (RemoteException ex) {
+        } catch (RemoteException | IllegalArgumentException ex) {
             Rlog.e(TAG, "Error getting config for subId " + subId + ": "
                     + ex.toString());
         }
