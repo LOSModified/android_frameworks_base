@@ -292,7 +292,7 @@ public class BatteryExternalStatsWorker implements BatteryStatsImpl.ExternalStat
         mHandler.post(runnable);
     }
 
-    public void shutdown() {
+    public synchronized void shutdown() {
         mHandler.removeMessages(SYNC_UPDATE);
         mHandler.removeMessages(SYNC_WAKELOCK_CHANGE);
         mHandler.removeMessages(SYNC_BATTERY_LEVEL_CHANGE);
