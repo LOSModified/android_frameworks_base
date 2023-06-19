@@ -1804,6 +1804,8 @@
         <item>com.android.settings</item>
         <item>com.android.providers.settings</item>
         <!-- Add packages here -->
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
     </string-array>
 
     <!-- If true, will force all packages on any system partition as queryable by any app regardless
@@ -1902,7 +1904,7 @@
 
          See android.service.timezone.TimeZoneProviderService for how to host location time zone
          provider services. -->
-    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false"></string>
+    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Whether the secondary location time zone provider is enabled.
          This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
@@ -1960,12 +1962,12 @@
 
          This must be set to a valid network recommendation app or empty.
      -->
-    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false"></string>
+    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
 
     <!-- The package name of the default search selector app. Must be granted the POST_NOTIFICATIONS
          permission.
     -->
-    <string name="config_defaultSearchSelectorPackageName" translatable="false"></string>
+    <string name="config_defaultSearchSelectorPackageName" translatable="false">com.google.android.apps.setupwizard.searchselector</string>
 
     <!-- The package name of the default captive portal login app. Must be granted the
          POST_NOTIFICATIONS permission.
@@ -1974,7 +1976,7 @@
 
     <!-- The package name of the dock manager app. Must be granted the
          POST_NOTIFICATIONS permission. -->
-    <string name="config_defaultDockManagerPackageName" translatable="false"></string>
+    <string name="config_defaultDockManagerPackageName" translatable="false">com.google.android.apps.nest.dockmanager.app</string>
 
     <!-- Whether to enable geocoder overlay which allows geocoder to be replaced
          by an app at run-time. When disabled, only the
@@ -2207,7 +2209,7 @@
     <string name="default_browser" translatable="false"></string>
 
     <!-- The name of the package that will hold the assistant role by default. -->
-    <string name="config_defaultAssistant" translatable="false" />
+    <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
     <!-- Whether the default assistant settings should be shown. -->
     <bool name="config_showDefaultAssistant">true</bool>
     <!-- The name of the package that will hold the browser role by default. -->
@@ -2227,7 +2229,7 @@
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.android.gallery3d</string>
     <!-- The names of the packages that will hold the automotive projection role. -->
-    <string name="config_systemAutomotiveProjection" translatable="false"></string>
+    <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
     <!-- The name of the package that will hold the system cluster service role. -->
     <string name="config_systemAutomotiveCluster" translatable="false"></string>
     <!-- The name of the package that will hold the system shell role. -->
@@ -2235,17 +2237,17 @@
     <!-- The name of the package that will hold the system contacts role. -->
     <string name="config_systemContacts" translatable="false">com.android.contacts</string>
     <!-- The name of the package that will hold the speech recognizer role by default. -->
-    <string name="config_systemSpeechRecognizer" translatable="false"></string>
+    <string name="config_systemSpeechRecognizer" translatable="false">com.google.android.tts</string>
     <!-- The name of the package that will hold the system Wi-Fi coex manager role. -->
     <string name="config_systemWifiCoexManager" translatable="false"></string>
     <!-- The name of the package that will hold the wellbeing role. -->
     <string name="config_systemWellbeing" translatable="false"></string>
     <!-- The name of the package that will hold the game service role. -->
-    <string name="config_systemGameService" translatable="false"></string>
+    <string name="config_systemGameService" translatable="false">com.google.android.gms</string>
     <!-- The name of the package that will hold the television notification handler role -->
     <string name="config_systemTelevisionNotificationHandler" translatable="false"></string>
     <!-- The name of the package that will hold the system activity recognizer role. -->
-    <string name="config_systemActivityRecognizer" translatable="false"></string>
+    <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
     <!-- The name of the package that will hold the system ui role -->
     <string name="config_systemUi" translatable="false">com.android.systemui</string>
     <!-- The name of the package that will hold the television remote service role.
@@ -2261,7 +2263,7 @@
     <string name="config_defaultAutomotiveNavigation" translatable="false"></string>
 
     <!-- The name of the package that will handle updating the device management role. -->
-    <string name="config_devicePolicyManagementUpdater" translatable="false"></string>
+    <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
 
     <!-- The name of the package that will be allowed to change its components' label/icon. -->
     <string name="config_overrideComponentUiPackage" translatable="false">com.android.stk</string>
@@ -3065,7 +3067,7 @@
             >com.android.simappdialog/com.android.simappdialog.InstallCarrierAppActivity</string>
 
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
-    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.settings;</string>
+    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.vending;com.android.settings;</string>
 
     <!-- System settings intelligence package name -->
     <string name="config_systemSettingsIntelligence" translatable="false">
@@ -3387,7 +3389,7 @@
     </string-array>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false"></string>
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false"></string>
@@ -4145,7 +4147,7 @@
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
          without explicit consent of the user. If no accessibility service with the specified name
          exists on the device, the accessibility shortcut will be disabled by default. -->
-    <string name="config_defaultAccessibilityService" translatable="false"></string>
+    <string name="config_defaultAccessibilityService" translatable="false">com.google.android.marvin.talkback/.TalkBackService</string>
 
     <!-- Flag indicates that whether escrow token API is enabled for TrustAgent -->
     <!-- Warning: This API can be dangerous when not implemented properly. In particular,
@@ -4162,7 +4164,7 @@
     <string name="config_defaultTrustAgent" translatable="false"></string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false"></string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.android.launcher3</string>
 
     <!-- Maximum size, specified in pixels, to restrain the display space width to. Height and
          density will be scaled accordingly to maintain aspect ratio. A value of 0 indicates no
@@ -4177,7 +4179,7 @@
          without explicit consent of the user. If no autofill service with the
           specified name exists on the device, autofill will be disabled by default.
     -->
-    <string name="config_defaultAutofillService" translatable="false"></string>
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
     <!-- The package name for the OEM custom system textclassifier service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -5086,6 +5088,8 @@
          AppIntegrityManager. These need to be apps on the system partition. -->
     <string-array name="config_integrityRuleProviderPackages" translatable="false">
         <!-- Add packages here -->
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
     </string-array>
 
     <!-- Whether or not wcg (wide color gamut) should be enabled on this device,
@@ -5159,14 +5163,14 @@
 
     <!-- Component name that accepts ACTION_SEND intents for nearby (proximity-based) sharing.
          Used by ChooserActivity. -->
-    <string translatable="false" name="config_defaultNearbySharingComponent"></string>
+    <string translatable="false" name="config_defaultNearbySharingComponent">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
 
     <!-- URI used for Nearby Share SliceProvider scanning. -->
     <string translatable="false" name="config_defaultNearbySharingSliceUri"></string>
 
     <!-- Component name that accepts settings intents for saved devices.
              Used by FastPairSettingsFragment. -->
-    <string translatable="false" name="config_defaultNearbyFastPairSettingsDevicesComponent"></string>
+    <string translatable="false" name="config_defaultNearbyFastPairSettingsDevicesComponent">com.google.android.gms/com.google.android.gms.nearby.discovery.devices.SavedDevicesSettingsActivity</string>
 
     <!-- Boolean indicating whether frameworks needs to reset cell broadcast geo-fencing
          check after reboot or airplane mode toggling -->
@@ -5736,7 +5740,7 @@
          features. Examples include the autorotate feature. -->
     <string name="config_systemVisualIntelligence" translatable="false"></string>
     <!-- On-device package for providing companion device associations. -->
-    <string name="config_systemCompanionDeviceProvider" translatable="false"></string>
+    <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
     <!-- Whether this device is supporting the software microphone toggle -->
     <bool name="config_supportsMicToggle">false</bool>
