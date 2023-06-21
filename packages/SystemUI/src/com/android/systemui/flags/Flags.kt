@@ -309,14 +309,14 @@ object Flags {
     @JvmField val MONOCHROMATIC_THEME = releasedFlag("monochromatic")
 
     // TODO(b/293380347): Tracking Bug
-    @JvmField val COLOR_FIDELITY = unreleasedFlag("color_fidelity")
+    @JvmField val COLOR_FIDELITY = releasedFlag("color_fidelity")
 
     // 900 - media
     // TODO(b/254512697): Tracking Bug
     val MEDIA_TAP_TO_TRANSFER = releasedFlag("media_tap_to_transfer")
 
     // TODO(b/254512502): Tracking Bug
-    val MEDIA_SESSION_ACTIONS = unreleasedFlag("media_session_actions")
+    val MEDIA_SESSION_ACTIONS = releasedFlag("media_session_actions")
 
     // TODO(b/254512654): Tracking Bug
     @JvmField val DREAM_MEDIA_COMPLICATION = unreleasedFlag("dream_media_complication")
