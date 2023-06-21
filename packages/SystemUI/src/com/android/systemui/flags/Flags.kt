@@ -332,7 +332,7 @@ object Flags {
 
     // TODO(b/265892345): Tracking Bug
     val PLUG_IN_STATUS_BAR_CHIP =
-            unreleasedFlag(265892345, "plug_in_status_bar_chip", teamfood = true)
+            releasedFlag(265892345, "plug_in_status_bar_chip")
 
     // 700 - dialer/calls
     // TODO(b/254512734): Tracking Bug
@@ -356,14 +356,14 @@ object Flags {
     val SCREEN_CONTENTS_TRANSLATION = unreleasedFlag(803, "screen_contents_translation")
 
     // 804 - monochromatic themes
-    @JvmField val MONOCHROMATIC_THEME = unreleasedFlag(804, "monochromatic", teamfood = true)
+    @JvmField val MONOCHROMATIC_THEME = releasedFlag(804, "monochromatic", teamfood = true)
 
     // 900 - media
     // TODO(b/254512697): Tracking Bug
     val MEDIA_TAP_TO_TRANSFER = releasedFlag(900, "media_tap_to_transfer")
 
     // TODO(b/254512502): Tracking Bug
-    val MEDIA_SESSION_ACTIONS = unreleasedFlag(901, "media_session_actions")
+    val MEDIA_SESSION_ACTIONS = releasedFlag(901, "media_session_actions")
 
     // TODO(b/254512726): Tracking Bug
     val MEDIA_NEARBY_DEVICES = releasedFlag(903, "media_nearby_devices")
@@ -378,18 +378,18 @@ object Flags {
     @JvmField val DREAM_MEDIA_TAP_TO_OPEN = unreleasedFlag(906, "dream_media_tap_to_open")
 
     // TODO(b/254513168): Tracking Bug
-    @JvmField val UMO_SURFACE_RIPPLE = unreleasedFlag(907, "umo_surface_ripple")
+    @JvmField val UMO_SURFACE_RIPPLE = releasedFlag(907, "umo_surface_ripple")
 
     @JvmField val MEDIA_FALSING_PENALTY = releasedFlag(908, "media_falsing_media")
 
     // TODO(b/261734857): Tracking Bug
-    @JvmField val UMO_TURBULENCE_NOISE = unreleasedFlag(909, "umo_turbulence_noise")
+    @JvmField val UMO_TURBULENCE_NOISE = releasedFlag(909, "umo_turbulence_noise")
 
     // TODO(b/263272731): Tracking Bug
     val MEDIA_TTT_RECEIVER_SUCCESS_RIPPLE = releasedFlag(910, "media_ttt_receiver_success_ripple")
 
     // TODO(b/263512203): Tracking Bug
-    val MEDIA_EXPLICIT_INDICATOR = unreleasedFlag(911, "media_explicit_indicator")
+    val MEDIA_EXPLICIT_INDICATOR = releasedFlag(911, "media_explicit_indicator")
 
     // TODO(b/265813373): Tracking Bug
     val MEDIA_TAP_TO_TRANSFER_DISMISS_GESTURE = releasedFlag(912, "media_ttt_dismiss_gesture")
@@ -437,7 +437,7 @@ object Flags {
     @Keep
     @JvmField
     val WM_ENABLE_SHELL_TRANSITIONS =
-        sysPropBooleanFlag(1100, "persist.wm.debug.shell_transit", default = false)
+        sysPropBooleanFlag(1100, "persist.wm.debug.shell_transit", default = true)
 
     // TODO(b/254513207): Tracking Bug
     @Keep
@@ -682,7 +682,7 @@ object Flags {
     // 2500 - output switcher
     // TODO(b/261538825): Tracking Bug
     @JvmField
-    val OUTPUT_SWITCHER_ADVANCED_LAYOUT = unreleasedFlag(2500, "output_switcher_advanced_layout")
+    val OUTPUT_SWITCHER_ADVANCED_LAYOUT = releasedFlag(2500, "output_switcher_advanced_layout")
     @JvmField
     val OUTPUT_SWITCHER_ROUTES_PROCESSING =
         unreleasedFlag(2501, "output_switcher_routes_processing")
