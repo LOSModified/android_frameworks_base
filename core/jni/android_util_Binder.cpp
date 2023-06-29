@@ -39,7 +39,6 @@
 #include <binder/Stability.h>
 #include <binderthreadstate/CallerUtils.h>
 #include <cutils/atomic.h>
-#include <cutils/threads.h>
 #include <log/log.h>
 #include <utils/KeyedVector.h>
 #include <utils/List.h>
