@@ -375,7 +375,7 @@ public final class NotificationPanelViewController implements ShadeSurface, Dump
     private boolean mIsTrackingExpansionFromStatusBar;
     private boolean mHintAnimationRunning;
     @Deprecated
-    private KeyguardBottomAreaView mKeyguardBottomArea;
+    public KeyguardBottomAreaView mKeyguardBottomArea;
     private boolean mExpanding;
     private boolean mSplitShadeEnabled;
     /** The bottom padding reserved for elements of the keyguard measuring notifications. */
