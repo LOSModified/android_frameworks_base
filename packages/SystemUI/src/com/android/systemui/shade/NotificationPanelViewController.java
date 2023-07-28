@@ -379,7 +379,7 @@ public final class NotificationPanelViewController implements Dumpable {
     private float mExpandedHeight = 0;
     private boolean mTracking;
     private boolean mHintAnimationRunning;
-    private KeyguardBottomAreaView mKeyguardBottomArea;
+    public KeyguardBottomAreaView mKeyguardBottomArea;
     private boolean mExpanding;
     private boolean mSplitShadeEnabled;
     /** The bottom padding reserved for elements of the keyguard measuring notifications. */
