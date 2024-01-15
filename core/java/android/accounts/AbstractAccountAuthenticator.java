@@ -200,9 +200,7 @@ public abstract class AbstractAccountAuthenticator {
                     Log.v(TAG, "confirmCredentials: result "
                             + AccountManager.sanitizeResult(result));
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "confirmCredentials", account.toString(), e);
             }
@@ -252,9 +250,7 @@ public abstract class AbstractAccountAuthenticator {
                     }
                     Log.v(TAG, "getAuthToken: result " + AccountManager.sanitizeResult(result));
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "getAuthToken",
                         account.toString() + "," + authTokenType, e);
@@ -281,9 +277,7 @@ public abstract class AbstractAccountAuthenticator {
                     Log.v(TAG, "updateCredentials: result "
                             + AccountManager.sanitizeResult(result));
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "updateCredentials",
                         account.toString() + "," + authTokenType, e);
@@ -297,9 +291,7 @@ public abstract class AbstractAccountAuthenticator {
             try {
                 final Bundle result = AbstractAccountAuthenticator.this.editProperties(
                     new AccountAuthenticatorResponse(response), accountType);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "editProperties", accountType, e);
             }
@@ -312,9 +304,7 @@ public abstract class AbstractAccountAuthenticator {
             try {
                 final Bundle result = AbstractAccountAuthenticator.this.hasFeatures(
                     new AccountAuthenticatorResponse(response), account, features);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "hasFeatures", account.toString(), e);
             }
@@ -327,9 +317,7 @@ public abstract class AbstractAccountAuthenticator {
             try {
                 final Bundle result = AbstractAccountAuthenticator.this.getAccountRemovalAllowed(
                     new AccountAuthenticatorResponse(response), account);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "getAccountRemovalAllowed", account.toString(), e);
             }
@@ -343,9 +331,7 @@ public abstract class AbstractAccountAuthenticator {
                 final Bundle result =
                         AbstractAccountAuthenticator.this.getAccountCredentialsForCloning(
                                 new AccountAuthenticatorResponse(response), account);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "getAccountCredentialsForCloning", account.toString(), e);
             }
@@ -361,9 +347,7 @@ public abstract class AbstractAccountAuthenticator {
                         AbstractAccountAuthenticator.this.addAccountFromCredentials(
                                 new AccountAuthenticatorResponse(response), account,
                                 accountCredentials);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "addAccountFromCredentials", account.toString(), e);
             }
@@ -391,9 +375,7 @@ public abstract class AbstractAccountAuthenticator {
                     Log.v(TAG, "startAddAccountSession: result "
                             + AccountManager.sanitizeResult(result));
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "startAddAccountSession", accountType, e);
             }
@@ -428,9 +410,7 @@ public abstract class AbstractAccountAuthenticator {
                             + AccountManager.sanitizeResult(result));
 
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "startUpdateCredentialsSession",
                         account.toString() + "," + authTokenType, e);
@@ -456,9 +436,7 @@ public abstract class AbstractAccountAuthenticator {
                 if (Log.isLoggable(TAG, Log.VERBOSE)) {
                     Log.v(TAG, "finishSession: result " + AccountManager.sanitizeResult(result));
                 }
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "finishSession", accountType, e);
 
@@ -475,9 +453,7 @@ public abstract class AbstractAccountAuthenticator {
                 final Bundle result = AbstractAccountAuthenticator.this
                         .isCredentialsUpdateSuggested(
                                 new AccountAuthenticatorResponse(response), account, statusToken);
-                if (result != null) {
                     response.onResult(result);
-                }
             } catch (Exception e) {
                 handleException(response, "isCredentialsUpdateSuggested", account.toString(), e);
             }
