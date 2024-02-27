@@ -1745,7 +1745,7 @@ public class DisplayDeviceConfig {
 
         final List<SdrHdrRatioPoint> points = sdrHdrRatioMap.getPoint();
         final int size = points.size();
-        if (size <= 0) {
+        if (size == 0) {
             return null;
         }
 
