@@ -938,14 +938,14 @@ systemui_optimized_java_defaults {
                 enabled: true,
                 optimize: true,
                 shrink: true,
-                shrink_resources: true,
+                shrink_resources: false,
                 optimized_shrink_resources: true,
-                ignore_warnings: false,
+                ignore_warnings: true,
                 proguard_compatibility: false,
             },
             conditions_default: {
                 optimize: {
-                    ignore_warnings: false,
+                    ignore_warnings: true,
                     proguard_compatibility: false,
                 },
             },
