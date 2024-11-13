@@ -9127,13 +9127,9 @@ public class UserManagerService extends IUserManager.Stub {
             // UNLIMITED_NUMBER_OF_USERS serves as a shorthand for getMaxSupportedUsers().
             defaultMax = UserManager.getMaxSupportedUsers();
         }
-        if (!Build.IS_DEBUGGABLE) {
-            return defaultMax;
-        } else {
             if (userTypeDetails.isManagedProfile()) {
                 return SystemProperties.getInt("persist.sys.max_profiles", defaultMax);
             }
-        }
         return defaultMax;
     }
 
