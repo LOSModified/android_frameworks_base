@@ -181,8 +181,8 @@ import java.util.function.Predicate;
 public class JobSchedulerService extends com.android.server.SystemService
         implements StateChangedListener, JobCompletedListener {
     public static final String TAG = "JobScheduler";
-    public static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);
-    public static final boolean DEBUG_STANDBY = DEBUG || false;
+    public static final boolean DEBUG = false;
+    public static final boolean DEBUG_STANDBY = false;
 
     /** The maximum number of jobs that we allow an app to schedule */
     private static final int MAX_JOBS_PER_APP = 150;
