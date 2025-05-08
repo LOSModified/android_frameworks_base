@@ -55,8 +55,8 @@ import java.util.function.Supplier;
 public final class TelephonyUtils {
     private static final String LOG_TAG = "TelephonyUtils";
 
-    public static boolean IS_USER = "user".equals(android.os.Build.TYPE);
-    public static boolean IS_DEBUGGABLE = SystemProperties.getInt("ro.debuggable", 0) == 1;
+    public static boolean IS_USER = true;
+    public static boolean IS_DEBUGGABLE = false;
 
     public static final Executor DIRECT_EXECUTOR = Runnable::run;
 
