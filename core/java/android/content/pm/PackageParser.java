@@ -4643,8 +4643,7 @@ public class PackageParser {
     private void setMaxAspectRatio(Package owner) {
         // Default to (1.86) 16.7:9 aspect ratio for pre-O apps and unset for O and greater.
         // NOTE: 16.7:9 was the max aspect ratio Android devices can support pre-O per the CDD.
-        float maxAspectRatio = owner.applicationInfo.targetSdkVersion < O
-                ? DEFAULT_PRE_O_MAX_ASPECT_RATIO : 0;
+        float maxAspectRatio = 0;
 
         if (owner.applicationInfo.maxAspectRatio != 0) {
             // Use the application max aspect ration as default if set.
