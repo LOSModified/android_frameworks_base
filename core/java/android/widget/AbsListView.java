@@ -3164,6 +3164,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
         }
 
         if (mClearScrollingCache != null) {
+            clearScrollingCache();
             removeCallbacks(mClearScrollingCache);
         }
 
