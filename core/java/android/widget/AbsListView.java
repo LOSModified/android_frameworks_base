@@ -4279,6 +4279,10 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
                                     }
                                     mSelector.setHotspot(x, ev.getY());
                                 }
+                                if (!mDataChanged && !mIsDetaching
+                                        && isAttachedToWindow()) {
+                                    performClick.run();
+                                }
                                 if (mTouchModeReset != null) {
                                     removeCallbacks(mTouchModeReset);
                                 }
@@ -4289,10 +4293,6 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
                                         mTouchMode = TOUCH_MODE_REST;
                                         child.setPressed(false);
                                         setPressed(false);
-                                        if (!mDataChanged && !mIsDetaching
-                                                && isAttachedToWindow()) {
-                                            performClick.run();
-                                        }
                                     }
                                 };
                                 postDelayed(mTouchModeReset,
