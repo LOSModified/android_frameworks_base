@@ -1152,7 +1152,7 @@ public class NotificationStackScrollLayout extends ViewGroup implements Dumpable
 
         final int innerWidth = viewWidth - mMinimumPaddings * 2;
         final int qsTileWidth = (innerWidth - mQsTilePadding * 3) / 4;
-        mSidePaddings = mMinimumPaddings + qsTileWidth + mQsTilePadding;
+        mSidePaddings = mMinimumPaddings;
     }
 
     void updateCornerRadius() {
