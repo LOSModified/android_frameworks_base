@@ -3358,7 +3358,7 @@
     <bool name="config_omnipresentCommunalUser">false</bool>
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
-    <bool name="config_enableNewAutoSelectNetworkUI">false</bool>
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
     <!-- If true, then we do not ask user for permission for apps to connect to USB devices.
          Do not set this to true for production devices. Doing so will cause you to fail CTS. -->
