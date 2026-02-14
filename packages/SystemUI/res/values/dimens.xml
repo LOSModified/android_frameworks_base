@@ -345,7 +345,7 @@
     <dimen name="notification_min_interaction_height">40dp</dimen>
 
     <!-- Radius for notifications corners without adjacent notifications -->
-    <dimen name="notification_corner_radius">28dp</dimen>
+    <dimen name="notification_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
 
     <!-- Stroke width for notifications focus state overlay, see id/notification_focus_outline -->
     <dimen name="notification_focus_stroke_width">3dp</dimen>
@@ -723,7 +723,7 @@
     <!-- The size of the gesture span needed to activate the "pull" notification expansion -->
     <dimen name="pull_span_min">25dp</dimen>
 
-    <dimen name="qs_corner_radius">28dp</dimen>
+    <dimen name="qs_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="qs_tile_height">80dp</dimen>
     <dimen name="qs_tile_margin_horizontal">8dp</dimen>
     <dimen name="qs_tile_margin_vertical">@dimen/qs_tile_margin_horizontal</dimen>
@@ -1156,7 +1156,7 @@
     <!-- Power Menu Lite -->
     <dimen name="global_actions_button_size">96dp</dimen>
     <dimen name="global_actions_button_padding">38dp</dimen>
-    <dimen name="global_actions_corner_radius">28dp</dimen>
+    <dimen name="global_actions_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="global_actions_lite_padding">24dp</dimen>
     <dimen name="global_actions_info_margin">32dp</dimen>
 
@@ -1243,7 +1243,7 @@
     <dimen name="biometric_dialog_fingerprint_icon_height">100dp</dimen>
     <dimen name="biometric_dialog_button_negative_max_width">160dp</dimen>
     <dimen name="biometric_dialog_button_positive_max_width">136dp</dimen>
-    <dimen name="biometric_dialog_corner_size">28dp</dimen>
+    <dimen name="biometric_dialog_corner_size">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="biometric_dialog_indicator_max_width">280dp</dimen>
     <!-- Y translation when showing/dismissing the dialog-->
     <dimen name="biometric_dialog_animation_translation_offset">350dp</dimen>
@@ -1351,7 +1351,7 @@
     <!-- Icon size of Ongoing App Ops chip -->
     <dimen name="ongoing_appops_chip_icon_size">16sp</dimen>
     <!-- Radius of Ongoing App Ops chip corners -->
-    <dimen name="ongoing_appops_chip_bg_corner_radius">28dp</dimen>
+    <dimen name="ongoing_appops_chip_bg_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <!--  One or two privacy items  -->
     <dimen name="ongoing_appops_chip_min_width">56dp</dimen>
     <!--  Three privacy items. This value must not be exceeded  -->
@@ -1908,7 +1908,7 @@
     <!-- The end padding for the timer text view. Only used if an embedded padding icon is used. -->
     <dimen name="ongoing_activity_chip_text_end_padding_for_embedded_padding_icon">6dp</dimen>
     <dimen name="ongoing_activity_chip_text_fading_edge_length">12dp</dimen>
-    <dimen name="ongoing_activity_chip_corner_radius">28dp</dimen>
+    <dimen name="ongoing_activity_chip_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <dimen name="ongoing_activity_chip_outline_width">2px</dimen>
 
     <!-- Status bar user chip -->
@@ -1936,7 +1936,7 @@
     <dimen name="signal_strength_icon_size">24dp</dimen>
 
     <!-- Internet dialog related dimensions -->
-    <dimen name="internet_dialog_corner_radius">24dp</dimen>
+    <dimen name="internet_dialog_corner_radius">@*android:dimen/config_dialogCornerRadius</dimen>
     <!-- Width of progress bar -->
     <dimen name="internet_dialog_progress_bar_width">152dp</dimen>
     <!-- End margin of network layout -->
