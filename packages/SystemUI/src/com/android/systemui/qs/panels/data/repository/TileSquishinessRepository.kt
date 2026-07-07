@@ -27,6 +27,5 @@ class TileSquishinessRepository @Inject constructor() {
     val squishiness = _squishiness.asStateFlow()
 
     fun setSquishinessValue(value: Float) {
-        _squishiness.value = value
     }
 }
